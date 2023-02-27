@@ -9,50 +9,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/datepicker.css">
+
 
 </head>
 
-<body>
-    <header class="l-header" id="header">
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<body data-spy="scroll" data-bs-target=".navbar" data-offset="70">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="nav-content container-fluid">
             <div class="navbar-brand">
-                <a class="#" href="#"><img class="d-inline-block align-top" src="./static/logo-.png " class="brand-logo" href="index.html" height="100px" width="200px">
+                <a href="index.html">
+                    <img class="d-inline-block align-top" src="./static/logo-.png " class="brand-logo" href="index.html">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="main-menu" id="navbarNavDropdown">
+                <span><i class="navbar-toggler-icon"></i></span>
+                <span><i class="bx bx-x"></i></span>
+            </button>
+            <div class="main-menu collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-expanded="false">Our Services </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-expanded="false">Our Services <i class="fa fa-angle-down "></i></a>
                         <ul>
-                            <li><a href="men.html">Men Products</a></li>
-                            <li><a href="women.html">Women Products</a></li>
-                            <li><a href="herbal.html">Herbal Products</a></li>
+                            <li><a href="men.html ">Men Products</a></li>
+                            <li><a href="women.html ">Women Products</a></li>
+                            <li><a href="herbal.html ">Herbal Products</a></li>
                         </ul>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Portfolio</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page " href="#portfolio">Portfolio</a>
                         </li>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#contact ">Contact Us</a>
                     </li>
                 </ul>
 
             </div>
 
-            </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <!-- Carousel start -->
     <section class="hero-large hero">
@@ -85,272 +90,314 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-        </div>
     </section>
-    <section class="menparlour" id="men">
-        <div class="wrapper">
+    <main role="main " class="mt-lg-5 m-0 ">
+        <section class="parlour" id="parlour">
             <h2 class="text-center wow animate__animated animate__bounceInDown " style="animation-duration: 1.6s; animation-delay: 0.6s ">Hair Cut</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/1-1.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Basic Hair Cut</h2>
-                        <h3 class="price">Price Rs100</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/1-1.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Basic Hair Cut</h3>
+                            <h4 class="price">Price Rs100</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/8.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Professional Hair Cut</h3>
-                        <h4 class="price">Price Rs300</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/8.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Professional Hair Cut</h3>
+                            <h4 class="price">Price Rs300</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Beard Shave</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/beard.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Basic Beard Shave</h2>
-                        <h3 class="price">Price Rs100</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/beard.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Basic Beard Shave</h3>
+                            <h4 class="price">Price Rs100</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/503240238.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Professional Beard Shave</h3>
-                        <h4 class="price">Price Rs300</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/503240238.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Professional Beard Shave</h3>
+                            <h4 class="price">Price Rs300</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a> </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Color</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/hair1.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Natural Color</h2>
-                        <h3 class="price">Price Rs800</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/hair1.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Natural Color</h3>
+                            <h4 class="price">Price Rs800</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/men-hair-highlights.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Fashion Color</h3>
-                        <h4 class="price">Price Rs1200</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/men-hair-highlights.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Fashion Color</h3>
+                            <h4 class="price">Price Rs1200</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/17567.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Highlights</h3>
-                        <h4 class="price">Price Rs1500</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/17567.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Highlights</h3>
+                            <h4 class="price">Price Rs1500</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/image.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Straightening</h3>
-                        <h4 class="price">Price Rs3000</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/image.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Straightening</h3>
+                            <h4 class="price">Price Rs3000</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/mqdefault.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Hair Spa</h3>
-                        <h4 class="price">Price Rs1000</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/mqdefault.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Hair Spa</h3>
+                            <h4 class="price">Price Rs1000</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Facial</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/maxresdefault.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Basic Facial</h2>
-                        <h3 class="price">Price Rs1000</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/maxresdefault.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Basic Facial</h3>
+                            <h4 class="price">Price Rs1000</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/facial.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Bleech Facial</h3>
-                        <h4 class="price">Price Rs800</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/facial.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Bleech Facial</h3>
+                            <h4 class="price">Price Rs800</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/3315687.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Professional Facial</h3>
-                        <h4 class="price">Price Rs1500</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/3315687.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Professional Facial</h3>
+                            <h4 class="price">Price Rs1500</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Manicure</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/93068923.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Basic Manicure</h2>
-                        <h3 class="price">Price Rs500</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/93068923.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Basic Manicure</h3>
+                            <h4 class="price">Price Rs500</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/194458647.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Professional Manicure</h3>
-                        <h4 class="price">Price Rs1000</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/194458647.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Professional Manicure</h3>
+                            <h4 class="price">Price Rs1000</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Pedicure</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/pedicure.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Basic Pedicure</h2>
-                        <h3 class="price">Price Rs800</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/pedicure.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Basic Pedicure</h3>
+                            <h4 class="price">Price Rs800</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/76279412.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Professional Pedicure</h3>
-                        <h4 class="price">Price Rs1200</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/76279412.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Professional Pedicure</h3>
+                            <h4 class="price">Price Rs1200</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Wax</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/under.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Underarm Wax removal</h2>
-                        <h3 class="price">Price Rs250</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/under.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Underarm Wax removal</h3>
+                            <h4 class="price">Price Rs250</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/192093038.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Arm Wax removal</h3>
-                        <h4 class="price">Price Rs400</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/192093038.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Arm Wax removal</h3>
+                            <h4 class="price">Price Rs400</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/down.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Back Wax removal</h3>
-                        <h4 class="price">Price Rs350</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/down.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Back Wax removal</h3>
+                            <h4 class="price">Price Rs350</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/1262600694.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Chest Wax removal</h3>
-                        <h4 class="price">Price Rs350</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/1262600694.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Chest Wax removal</h3>
+                            <h4 class="price">Price Rs350</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/1075627804.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Leg Wax removal</h3>
-                        <h4 class="price">Price Rs400</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/1075627804.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Leg Wax removal</h3>
+                            <h4 class="price">Price Rs400</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/maxresdefault (1).jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Ear Wax removal</h3>
-                        <h4 class="price">Price Rs1200</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/maxresdefault (1).jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Ear Wax removal</h3>
+                            <h4 class="price">Price Rs1200</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Threading</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/58570491.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Upper lip threading</h2>
-                        <h3 class="price">Price Rs100</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/58570491.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Upper lip threading</h3>
+                            <h4 class="price">Price Rs100</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/58570491.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Lower lip threading</h2>
-                        <h3 class="price">Price Rs100</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/58570491.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Lower lip threading</h3>
+                            <h4 class="price">Price Rs100</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/shutterstock_258598493.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Eyebrows threading</h2>
-                        <h3 class="price">Price Rs100</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/shutterstock_258598493.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Eyebrows threading</h3>
+                            <h4 class="price">Price Rs100</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/hair-removal.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Full face threading</h3>
-                        <h4 class="price">Price Rs300</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/hair-removal.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Full face threading</h3>
+                            <h4 class="price">Price Rs300</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <h2 class="text-center wow animate__animated animate__fadeInLeft" style="animation-duration: 1.0s; animation-delay: 0.6s">Massage</h2>
             <div class="container-lg pt-4 pb-5 d-flex flex-wrap justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-duration="700">
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/massage1.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h2 classs="hair-cut">Head Massage</h2>
-                        <h3 class="price">15 min Price Rs500</h3>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/58570491.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Head Massage</h3>
+                            <h4 class="price">15 min Price Rs500</h4>
+                            <h4 class="price">30 min Price Rs800</h4>
+                            <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__fadeInUp" style="animation-duration: 1.0s; animation-delay: 0.6s">
-                    <div class="profile-image">
-                        <img src="./static/massagefull.jpg" alt=""></div>
-                    <div class="profile-main">
-                        <h3 classs="hair-cut">Full Body Massage</h3>
-                        <h4 class="price"><span>60 min </span>Price Rs1800</h4>
-                        <h4 class="price"><span>90 min </span>Price Rs2200</h4>
+                <div class="card mb-5 ms-2 me-2 flex-grow-1 wow animate__animated animate__slideInRight" style="animation-duration: 1.4s; animation-delay: 0.6s"><img src="./static/massage1.jpg" alt="" class="border rounded" width="100px" height="100px">
+                    <div class="px-md-5 px-2 my-auto border border-left-0">
+                        <div class="description">
+                            <h3 classs="hair-cut">Full Body Massage</h3>
+                            <h4 class="price">60 min Price Rs1800</h4>
+                            <h4 class="price">90 min Price Rs2200</h4>
+                        </div>
+                        <a class="button-get wow animate__animated animate__bounceInUp" style="animation-duration: 2.2s; animation-delay: 0.6s" href="appointment.html">Book Now</a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-content container-xxl">
+            <div class="footer-col footer-col1">
+                <a class="footer-col-title" href="index.html"><img src="./static/logo.png " alt=" "></a>
+            </div>
+            <div class="footer-col footer-col1">
+                <p class="footer-col-title"><strong>Our Services</strong></p>
+                <p><strong><a href="men.html " class="text-reset ">Men Products</a></strong></p>
+                <p><strong><a href="women.html" class="text-reset ">Women Products</a></strong></p>
+                <p><strong><a href="herbal.html" class="text-reset ">Herbal Products</a></strong></p>
+            </div>
+            <div class="footer-col location">
+                <p class="footer-col-title"><strong>Contact Us</strong></p>
+                <p>Mumbai, India</p>
+                <div class="address">
+                    <p><strong>Phone: </strong><span>+91 923-232-3323</span></p>
+                    <p><strong>Email: </strong><span>beautyparlour@example.com</span></p>
+                    <p><strong>Schedule: </strong><span>From 09:00 AM to 18:00 PM</p></span>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- javascript files-->
-    <script src="./js/script.js "></script>
-    <script src="./js/bootstrap.bundle.js "></script>
-    <script src="./js/bootstrap.min.js "></script>
-    <script src="./js/bootstrap.js "></script>
-    <script src="./js/jquery.js "></script>
-    <script src="./js/wow.min.js "></script>
+    </div>
+
 </body>
 
 </html>
